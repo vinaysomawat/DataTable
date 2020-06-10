@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Table CRUD Ops</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>NovoPay Assignment</h2>
+      <button class="button">Add User</button>
+        <input type="text" id="myInput" onkeyup="searchtable()" placeholder="Search for names.." title="Type in a name">
+        <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Add User</p>
+            <form id="formElem">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="dob">Date of Birth</label><br><br>
+                <input type="date" id="dob" name="dob"><br><br>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location">
+                <label for="interests">Interests</label>
+                <input type="text" id="interests" name="interests">
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <table id="dataTable">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>DOB</th>
+    <th>Location</th>
+    <th>Interest</th>
+    <th>Delete User</th>
+  </tr>
+</table>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
